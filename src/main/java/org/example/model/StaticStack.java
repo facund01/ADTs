@@ -14,7 +14,7 @@ public class StaticStack implements Stack {
     @Override
     public void push(int a) {
         if (count == MAX) {
-            throw new RuntimeException("No se puede agregar un elemento en una pila llena");
+            throw new RuntimeException("No se puede apilar un elemento en una pila llena");
         }
 
         array[count] = a;
@@ -24,7 +24,7 @@ public class StaticStack implements Stack {
     @Override
     public void pop() {
         if (isEmpty()) {
-            throw new RuntimeException("No se puede quitar un elemento de una pila vacía");
+            throw new RuntimeException("No se puede desapilar un elemento de una pila vacía");
         }
 
         count--;

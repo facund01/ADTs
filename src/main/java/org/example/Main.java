@@ -1,20 +1,18 @@
 package org.example;
 
-import org.example.model.LinkedList;
-import org.example.model.List;
-import org.example.model.Stack;
-import org.example.model.StaticStack;
+import org.example.model.*;
 import org.example.util.StackUtil;
 
 public class Main {
     public static void main(String[] args) {
-        List list = new LinkedList();
+        Queue queue = new DynamicQueue();
 
-        list.add(1);
-        list.add(2);
-        list.add(3);
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        queue.dequeue();
 
-        System.out.println(list.get(2));
+        System.out.println(queue.getFirst());
 
     }
 }
