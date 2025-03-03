@@ -1,19 +1,20 @@
 package org.example;
 
+import org.example.model.LinkedList;
+import org.example.model.List;
 import org.example.model.Stack;
 import org.example.model.StaticStack;
 import org.example.util.StackUtil;
 
 public class Main {
     public static void main(String[] args) {
-        Stack stack = new StaticStack();
+        List list = new LinkedList();
 
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
+        list.add(1);
+        list.add(2);
+        list.add(3);
 
-        Stack copy = StackUtil.copy(stack);
+        System.out.println(list.get(2));
 
-        StackUtil.print(stack);
     }
 }
