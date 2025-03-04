@@ -5,14 +5,14 @@ import org.example.util.StackUtil;
 
 public class Main {
     public static void main(String[] args) {
-        Queue queue = new DynamicQueue();
+        PriorityQueue priorityQueue = new StaticPriorityQueue();
 
-        queue.enqueue(1);
-        queue.enqueue(2);
-        queue.enqueue(3);
-        queue.dequeue();
+        priorityQueue.enqueue(10, 1);
+        priorityQueue.enqueue(20, 2);
+        priorityQueue.enqueue(30, 2);
+        priorityQueue.enqueue(40, 3);
 
-        System.out.println(queue.getFirst());
+
 
     }
 }
